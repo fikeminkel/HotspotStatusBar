@@ -82,7 +82,7 @@ class MenuBarView: NSView {
       toolTip = "Status: Disconnected"
       return
     }
-    toolTip = "Status: \(status.connectedString) \nNetwork \(status.networkType.rawValue) \nSignal: \(status.signalString) \nUptime: \(status.uptime) \nIP Address: \(status.ipAddress)"
+    toolTip = "Status: \(status.connectedString) \nNetwork: \(status.networkType.rawValue) \nSignal: \(status.signalString) \nUptime: \(status.uptime) \nIP Address: \(status.ipAddress)"
   }
   
   func updateFrameForBatteryUsage() {

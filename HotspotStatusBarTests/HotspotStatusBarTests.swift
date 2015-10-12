@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import TetherStatusBar
+@testable import HotspotStatusBar
 
-class TetherStatusBarTests: XCTestCase {
+class HotspotStatusBarTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

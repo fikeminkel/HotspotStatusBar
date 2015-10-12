@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52209DA81BC5BFE200339037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209DA71BC5BFE200339037 /* AppDelegate.swift */; };
-		52209DAD1BC5BFE200339037 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52209DAB1BC5BFE200339037 /* MainMenu.xib */; };
-		52209DB81BC5BFE200339037 /* TetherStatusBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209DB71BC5BFE200339037 /* TetherStatusBarTests.swift */; };
-		52209DC31BC5BFE200339037 /* TetherStatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209DC21BC5BFE200339037 /* TetherStatusBarUITests.swift */; };
-		52209DD21BC5C79F00339037 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209DD11BC5C79F00339037 /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
-		52209DD71BC5DE9A00339037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52209DD61BC5DE9A00339037 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		52209DE01BC5E62700339037 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52209DDE1BC5E62700339037 /* Alamofire.framework */; settings = {ASSET_TAGS = (); }; };
-		52209DE11BC5E62700339037 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52209DDF1BC5E62700339037 /* SwiftyJSON.framework */; settings = {ASSET_TAGS = (); }; };
-		52209DE81BC5E7A100339037 /* VerizonHotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209DE71BC5E7A100339037 /* VerizonHotspotPoller.swift */; settings = {ASSET_TAGS = (); }; };
-		52209DFB1BC8233B00339037 /* HotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209DFA1BC8233B00339037 /* HotspotPoller.swift */; settings = {ASSET_TAGS = (); }; };
-		52209E071BC83A8C00339037 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52209E061BC83A8C00339037 /* MenuBarView.swift */; settings = {ASSET_TAGS = (); }; };
-		529280961BCBDBB0004033DA /* WIFIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529280951BCBDBB0004033DA /* WIFIClient.swift */; settings = {ASSET_TAGS = (); }; };
-		529280991BCBEAEE004033DA /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529280981BCBEAEE004033DA /* PreferencesManager.swift */; settings = {ASSET_TAGS = (); }; };
+		52A457431BCC5ACA00A418F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		52A457441BCC5ACA00A418F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A457301BCC5ACA00A418F0 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
+		52A457451BCC5ACA00A418F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457351BCC5ACA00A418F0 /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
+		52A457461BCC5ACA00A418F0 /* WIFIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457361BCC5ACA00A418F0 /* WIFIClient.swift */; settings = {ASSET_TAGS = (); }; };
+		52A457471BCC5ACA00A418F0 /* HotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457381BCC5ACA00A418F0 /* HotspotPoller.swift */; settings = {ASSET_TAGS = (); }; };
+		52A457481BCC5ACA00A418F0 /* VerizonHotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4573A1BCC5ACA00A418F0 /* VerizonHotspotPoller.swift */; settings = {ASSET_TAGS = (); }; };
+		52A457491BCC5ACA00A418F0 /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4573C1BCC5ACA00A418F0 /* PreferencesManager.swift */; settings = {ASSET_TAGS = (); }; };
+		52A4574A1BCC5ACA00A418F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573E1BCC5ACA00A418F0 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		52A4574B1BCC5ACA00A418F0 /* indicators.json in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573F1BCC5ACA00A418F0 /* indicators.json */; settings = {ASSET_TAGS = (); }; };
+		52A4574D1BCC5ACA00A418F0 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457421BCC5ACA00A418F0 /* MenuBarView.swift */; settings = {ASSET_TAGS = (); }; };
+		52A45A9B1BCC5BC900A418F0 /* HotspotStatusBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457501BCC5AEA00A418F0 /* HotspotStatusBarTests.swift */; settings = {ASSET_TAGS = (); }; };
+		52A45A9C1BCC5BCD00A418F0 /* HotspotStatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,25 +39,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52209DA41BC5BFE200339037 /* TetherStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetherStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52209DA71BC5BFE200339037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52209DAC1BC5BFE200339037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		52209DB31BC5BFE200339037 /* TetherStatusBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetherStatusBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52209DB71BC5BFE200339037 /* TetherStatusBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetherStatusBarTests.swift; sourceTree = "<group>"; };
-		52209DB91BC5BFE200339037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52209DBE1BC5BFE200339037 /* TetherStatusBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetherStatusBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52209DC21BC5BFE200339037 /* TetherStatusBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetherStatusBarUITests.swift; sourceTree = "<group>"; };
-		52209DC41BC5BFE200339037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52209DD11BC5C79F00339037 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		52209DD41BC5DE6000339037 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52209DD61BC5DE9A00339037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52209DDE1BC5E62700339037 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
-		52209DDF1BC5E62700339037 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
-		52209DE71BC5E7A100339037 /* VerizonHotspotPoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerizonHotspotPoller.swift; sourceTree = "<group>"; };
-		52209DFA1BC8233B00339037 /* HotspotPoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotPoller.swift; sourceTree = "<group>"; };
-		52209E061BC83A8C00339037 /* MenuBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
-		529280951BCBDBB0004033DA /* WIFIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIFIClient.swift; sourceTree = "<group>"; };
-		529280981BCBEAEE004033DA /* PreferencesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesManager.swift; sourceTree = "<group>"; };
+		52209DA41BC5BFE200339037 /* HotspotStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotspotStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52209DB31BC5BFE200339037 /* HotspotStatusBar.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBar.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52209DBE1BC5BFE200339037 /* HotspotStatusBar.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBar.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52A457311BCC5ACA00A418F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		52A457351BCC5ACA00A418F0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		52A457361BCC5ACA00A418F0 /* WIFIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIFIClient.swift; sourceTree = "<group>"; };
+		52A457381BCC5ACA00A418F0 /* HotspotPoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotPoller.swift; sourceTree = "<group>"; };
+		52A4573A1BCC5ACA00A418F0 /* VerizonHotspotPoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerizonHotspotPoller.swift; sourceTree = "<group>"; };
+		52A4573C1BCC5ACA00A418F0 /* PreferencesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesManager.swift; sourceTree = "<group>"; };
+		52A4573E1BCC5ACA00A418F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52A4573F1BCC5ACA00A418F0 /* indicators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = indicators.json; sourceTree = "<group>"; };
+		52A457401BCC5ACA00A418F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A457421BCC5ACA00A418F0 /* MenuBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		52A4574F1BCC5AEA00A418F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A457501BCC5AEA00A418F0 /* HotspotStatusBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotStatusBarTests.swift; sourceTree = "<group>"; };
+		52A45A971BCC5B1200A418F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotStatusBarUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52209DE11BC5E62700339037 /* SwiftyJSON.framework in Frameworks */,
-				52209DE01BC5E62700339037 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +87,9 @@
 		52209D9B1BC5BFE200339037 = {
 			isa = PBXGroup;
 			children = (
-				52209DA61BC5BFE200339037 /* TetherStatusBar */,
-				52209DB61BC5BFE200339037 /* TetherStatusBarTests */,
-				52209DC11BC5BFE200339037 /* TetherStatusBarUITests */,
+				52A4572E1BCC5ACA00A418F0 /* HotspotStatusBar */,
+				52A4574E1BCC5AEA00A418F0 /* HotspotStatusBarTests */,
+				52A45A961BCC5B1200A418F0 /* HotspotStatusBarUITests */,
 				52209DA51BC5BFE200339037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,113 +97,103 @@
 		52209DA51BC5BFE200339037 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52209DA41BC5BFE200339037 /* TetherStatusBar.app */,
-				52209DB31BC5BFE200339037 /* TetherStatusBarTests.xctest */,
-				52209DBE1BC5BFE200339037 /* TetherStatusBarUITests.xctest */,
+				52209DA41BC5BFE200339037 /* HotspotStatusBar.app */,
+				52209DB31BC5BFE200339037 /* HotspotStatusBar.xctest */,
+				52209DBE1BC5BFE200339037 /* HotspotStatusBar.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		52209DA61BC5BFE200339037 /* TetherStatusBar */ = {
+		52A4572E1BCC5ACA00A418F0 /* HotspotStatusBar */ = {
 			isa = PBXGroup;
 			children = (
-				52209DAB1BC5BFE200339037 /* MainMenu.xib */,
-				52209DA71BC5BFE200339037 /* AppDelegate.swift */,
-				52209DE51BC5E7A100339037 /* Pollers */,
-				52209DD01BC5C4DA00339037 /* Network */,
-				52209E011BC83A4100339037 /* Views */,
-				529280971BCBEADE004033DA /* Preferences */,
-				52209DD31BC5DE3D00339037 /* Resources */,
-				52209DDD1BC5E60D00339037 /* Frameworks */,
+				52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */,
+				52A457301BCC5ACA00A418F0 /* MainMenu.xib */,
+				52A457341BCC5ACA00A418F0 /* Network */,
+				52A457371BCC5ACA00A418F0 /* Pollers */,
+				52A457411BCC5ACA00A418F0 /* Views */,
+				52A4573B1BCC5ACA00A418F0 /* Preferences */,
+				52A4573D1BCC5ACA00A418F0 /* Resources */,
 			);
-			path = TetherStatusBar;
+			path = HotspotStatusBar;
 			sourceTree = "<group>";
 		};
-		52209DB61BC5BFE200339037 /* TetherStatusBarTests */ = {
+		52A457341BCC5ACA00A418F0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				52209DB71BC5BFE200339037 /* TetherStatusBarTests.swift */,
-				52209DB91BC5BFE200339037 /* Info.plist */,
-			);
-			path = TetherStatusBarTests;
-			sourceTree = "<group>";
-		};
-		52209DC11BC5BFE200339037 /* TetherStatusBarUITests */ = {
-			isa = PBXGroup;
-			children = (
-				52209DC21BC5BFE200339037 /* TetherStatusBarUITests.swift */,
-				52209DC41BC5BFE200339037 /* Info.plist */,
-			);
-			path = TetherStatusBarUITests;
-			sourceTree = "<group>";
-		};
-		52209DD01BC5C4DA00339037 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				52209DD11BC5C79F00339037 /* Reachability.swift */,
-				529280951BCBDBB0004033DA /* WIFIClient.swift */,
+				52A457351BCC5ACA00A418F0 /* Reachability.swift */,
+				52A457361BCC5ACA00A418F0 /* WIFIClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		52209DD31BC5DE3D00339037 /* Resources */ = {
+		52A457371BCC5ACA00A418F0 /* Pollers */ = {
 			isa = PBXGroup;
 			children = (
-				52209DD61BC5DE9A00339037 /* Assets.xcassets */,
-				52209DD41BC5DE6000339037 /* Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		52209DDD1BC5E60D00339037 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52209DDE1BC5E62700339037 /* Alamofire.framework */,
-				52209DDF1BC5E62700339037 /* SwiftyJSON.framework */,
-			);
-			name = Frameworks;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		52209DE51BC5E7A100339037 /* Pollers */ = {
-			isa = PBXGroup;
-			children = (
-				52209DFA1BC8233B00339037 /* HotspotPoller.swift */,
-				52209DE61BC5E7A100339037 /* Verizon */,
+				52A457381BCC5ACA00A418F0 /* HotspotPoller.swift */,
+				52A457391BCC5ACA00A418F0 /* Verizon */,
 			);
 			path = Pollers;
 			sourceTree = "<group>";
 		};
-		52209DE61BC5E7A100339037 /* Verizon */ = {
+		52A457391BCC5ACA00A418F0 /* Verizon */ = {
 			isa = PBXGroup;
 			children = (
-				52209DE71BC5E7A100339037 /* VerizonHotspotPoller.swift */,
+				52A4573A1BCC5ACA00A418F0 /* VerizonHotspotPoller.swift */,
 			);
 			path = Verizon;
 			sourceTree = "<group>";
 		};
-		52209E011BC83A4100339037 /* Views */ = {
+		52A4573B1BCC5ACA00A418F0 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
-				52209E061BC83A8C00339037 /* MenuBarView.swift */,
+				52A4573C1BCC5ACA00A418F0 /* PreferencesManager.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		52A4573D1BCC5ACA00A418F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52A457401BCC5ACA00A418F0 /* Info.plist */,
+				52A4573E1BCC5ACA00A418F0 /* Assets.xcassets */,
+				52A4573F1BCC5ACA00A418F0 /* indicators.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52A457411BCC5ACA00A418F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52A457421BCC5ACA00A418F0 /* MenuBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		529280971BCBEADE004033DA /* Preferences */ = {
+		52A4574E1BCC5AEA00A418F0 /* HotspotStatusBarTests */ = {
 			isa = PBXGroup;
 			children = (
-				529280981BCBEAEE004033DA /* PreferencesManager.swift */,
+				52A4574F1BCC5AEA00A418F0 /* Info.plist */,
+				52A457501BCC5AEA00A418F0 /* HotspotStatusBarTests.swift */,
 			);
-			path = Preferences;
+			path = HotspotStatusBarTests;
+			sourceTree = "<group>";
+		};
+		52A45A961BCC5B1200A418F0 /* HotspotStatusBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52A45A971BCC5B1200A418F0 /* Info.plist */,
+				52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */,
+			);
+			path = HotspotStatusBarUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		52209DA31BC5BFE200339037 /* TetherStatusBar */ = {
+		52209DA31BC5BFE200339037 /* HotspotStatusBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52209DC71BC5BFE200339037 /* Build configuration list for PBXNativeTarget "TetherStatusBar" */;
+			buildConfigurationList = 52209DC71BC5BFE200339037 /* Build configuration list for PBXNativeTarget "HotspotStatusBar" */;
 			buildPhases = (
 				52209DA01BC5BFE200339037 /* Sources */,
 				52209DA11BC5BFE200339037 /* Frameworks */,
@@ -218,14 +204,14 @@
 			);
 			dependencies = (
 			);
-			name = TetherStatusBar;
+			name = HotspotStatusBar;
 			productName = TetherStatusBar;
-			productReference = 52209DA41BC5BFE200339037 /* TetherStatusBar.app */;
+			productReference = 52209DA41BC5BFE200339037 /* HotspotStatusBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		52209DB21BC5BFE200339037 /* TetherStatusBarTests */ = {
+		52209DB21BC5BFE200339037 /* HotspotStatusBarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52209DCA1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "TetherStatusBarTests" */;
+			buildConfigurationList = 52209DCA1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "HotspotStatusBarTests" */;
 			buildPhases = (
 				52209DAF1BC5BFE200339037 /* Sources */,
 				52209DB01BC5BFE200339037 /* Frameworks */,
@@ -236,14 +222,14 @@
 			dependencies = (
 				52209DB51BC5BFE200339037 /* PBXTargetDependency */,
 			);
-			name = TetherStatusBarTests;
+			name = HotspotStatusBarTests;
 			productName = TetherStatusBarTests;
-			productReference = 52209DB31BC5BFE200339037 /* TetherStatusBarTests.xctest */;
+			productReference = 52209DB31BC5BFE200339037 /* HotspotStatusBar.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		52209DBD1BC5BFE200339037 /* TetherStatusBarUITests */ = {
+		52209DBD1BC5BFE200339037 /* HotspotStatusBarUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52209DCD1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "TetherStatusBarUITests" */;
+			buildConfigurationList = 52209DCD1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "HotspotStatusBarUITests" */;
 			buildPhases = (
 				52209DBA1BC5BFE200339037 /* Sources */,
 				52209DBB1BC5BFE200339037 /* Frameworks */,
@@ -254,9 +240,9 @@
 			dependencies = (
 				52209DC01BC5BFE200339037 /* PBXTargetDependency */,
 			);
-			name = TetherStatusBarUITests;
+			name = HotspotStatusBarUITests;
 			productName = TetherStatusBarUITests;
-			productReference = 52209DBE1BC5BFE200339037 /* TetherStatusBarUITests.xctest */;
+			productReference = 52209DBE1BC5BFE200339037 /* HotspotStatusBar.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +267,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 52209D9F1BC5BFE200339037 /* Build configuration list for PBXProject "TetherStatusBar" */;
+			buildConfigurationList = 52209D9F1BC5BFE200339037 /* Build configuration list for PBXProject "HotspotStatusBar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -294,9 +280,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				52209DA31BC5BFE200339037 /* TetherStatusBar */,
-				52209DB21BC5BFE200339037 /* TetherStatusBarTests */,
-				52209DBD1BC5BFE200339037 /* TetherStatusBarUITests */,
+				52209DA31BC5BFE200339037 /* HotspotStatusBar */,
+				52209DB21BC5BFE200339037 /* HotspotStatusBarTests */,
+				52209DBD1BC5BFE200339037 /* HotspotStatusBarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,8 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52209DAD1BC5BFE200339037 /* MainMenu.xib in Resources */,
-				52209DD71BC5DE9A00339037 /* Assets.xcassets in Resources */,
+				52A4574B1BCC5ACA00A418F0 /* indicators.json in Resources */,
+				52A4574A1BCC5ACA00A418F0 /* Assets.xcassets in Resources */,
+				52A457441BCC5ACA00A418F0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,13 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529280991BCBEAEE004033DA /* PreferencesManager.swift in Sources */,
-				52209DE81BC5E7A100339037 /* VerizonHotspotPoller.swift in Sources */,
-				52209E071BC83A8C00339037 /* MenuBarView.swift in Sources */,
-				529280961BCBDBB0004033DA /* WIFIClient.swift in Sources */,
-				52209DD21BC5C79F00339037 /* Reachability.swift in Sources */,
-				52209DFB1BC8233B00339037 /* HotspotPoller.swift in Sources */,
-				52209DA81BC5BFE200339037 /* AppDelegate.swift in Sources */,
+				52A457431BCC5ACA00A418F0 /* AppDelegate.swift in Sources */,
+				52A457481BCC5ACA00A418F0 /* VerizonHotspotPoller.swift in Sources */,
+				52A457461BCC5ACA00A418F0 /* WIFIClient.swift in Sources */,
+				52A457471BCC5ACA00A418F0 /* HotspotPoller.swift in Sources */,
+				52A457451BCC5ACA00A418F0 /* Reachability.swift in Sources */,
+				52A4574D1BCC5ACA00A418F0 /* MenuBarView.swift in Sources */,
+				52A457491BCC5ACA00A418F0 /* PreferencesManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52209DB81BC5BFE200339037 /* TetherStatusBarTests.swift in Sources */,
+				52A45A9B1BCC5BC900A418F0 /* HotspotStatusBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52209DC31BC5BFE200339037 /* TetherStatusBarUITests.swift in Sources */,
+				52A45A9C1BCC5BCD00A418F0 /* HotspotStatusBarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,21 +370,21 @@
 /* Begin PBXTargetDependency section */
 		52209DB51BC5BFE200339037 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52209DA31BC5BFE200339037 /* TetherStatusBar */;
+			target = 52209DA31BC5BFE200339037 /* HotspotStatusBar */;
 			targetProxy = 52209DB41BC5BFE200339037 /* PBXContainerItemProxy */;
 		};
 		52209DC01BC5BFE200339037 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52209DA31BC5BFE200339037 /* TetherStatusBar */;
+			target = 52209DA31BC5BFE200339037 /* HotspotStatusBar */;
 			targetProxy = 52209DBF1BC5BFE200339037 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		52209DAB1BC5BFE200339037 /* MainMenu.xib */ = {
+		52A457301BCC5ACA00A418F0 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				52209DAC1BC5BFE200339037 /* Base */,
+				52A457311BCC5ACA00A418F0 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -493,11 +480,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = TetherStatusBar/Resources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HotspotStatusBar/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HotspotStatusBar;
 			};
 			name = Debug;
 		};
@@ -509,11 +507,22 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/Mac",
+					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = TetherStatusBar/Resources/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HotspotStatusBar/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HotspotStatusBar;
 			};
 			name = Release;
 		};
@@ -525,8 +534,8 @@
 				INFOPLIST_FILE = TetherStatusBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TetherStatusBar.app/Contents/MacOS/TetherStatusBar";
+				PRODUCT_NAME = HotspotStatusBar;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotspotStatusBar.app/Contents/MacOS/HotspotStatusBar";
 			};
 			name = Debug;
 		};
@@ -538,8 +547,8 @@
 				INFOPLIST_FILE = TetherStatusBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TetherStatusBar.app/Contents/MacOS/TetherStatusBar";
+				PRODUCT_NAME = HotspotStatusBar;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotspotStatusBar.app/Contents/MacOS/HotspotStatusBar";
 			};
 			name = Release;
 		};
@@ -550,7 +559,7 @@
 				INFOPLIST_FILE = TetherStatusBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HotspotStatusBar;
 				TEST_TARGET_NAME = TetherStatusBar;
 				USES_XCTRUNNER = YES;
 			};
@@ -563,7 +572,7 @@
 				INFOPLIST_FILE = TetherStatusBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HotspotStatusBar;
 				TEST_TARGET_NAME = TetherStatusBar;
 				USES_XCTRUNNER = YES;
 			};
@@ -572,7 +581,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52209D9F1BC5BFE200339037 /* Build configuration list for PBXProject "TetherStatusBar" */ = {
+		52209D9F1BC5BFE200339037 /* Build configuration list for PBXProject "HotspotStatusBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52209DC51BC5BFE200339037 /* Debug */,
@@ -581,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52209DC71BC5BFE200339037 /* Build configuration list for PBXNativeTarget "TetherStatusBar" */ = {
+		52209DC71BC5BFE200339037 /* Build configuration list for PBXNativeTarget "HotspotStatusBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52209DC81BC5BFE200339037 /* Debug */,
@@ -590,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52209DCA1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "TetherStatusBarTests" */ = {
+		52209DCA1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "HotspotStatusBarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52209DCB1BC5BFE200339037 /* Debug */,
@@ -599,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52209DCD1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "TetherStatusBarUITests" */ = {
+		52209DCD1BC5BFE200339037 /* Build configuration list for PBXNativeTarget "HotspotStatusBarUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52209DCE1BC5BFE200339037 /* Debug */,
