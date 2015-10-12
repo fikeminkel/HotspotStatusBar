@@ -1,0 +1,6 @@
+# Release
+github "Alamofire/Alamofire" "2.0.1"
+github "SwiftyJSON/SwiftyJSON" "2.3.0"
+
+# Test
+github "AliSoftware/OHHTTPStubs" "4.1.0"
