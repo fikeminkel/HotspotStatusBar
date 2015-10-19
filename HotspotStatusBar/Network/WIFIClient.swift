@@ -3,8 +3,10 @@ import CoreWLAN
 
 class WIFIClient: NSObject {
 
+  var interfaceConfiguration = CWWiFiClient.sharedWiFiClient().interface()?.configuration()
+  
   var knownSSIDs: [String] {
-    guard let networkProfiles = (CWWiFiClient.sharedWiFiClient().interface()?.configuration()?.networkProfiles) else {
+    guard let networkProfiles = (interfaceConfiguration?.networkProfiles) else {
       return []
     }
     var ssids: [String] = []
@@ -16,3 +18,5 @@ class WIFIClient: NSObject {
     return ssids
   }
 }
+
+

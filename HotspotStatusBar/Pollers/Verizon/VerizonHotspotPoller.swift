@@ -35,6 +35,8 @@ class VerizonHotspotPoller: NSObject, HotspotPoller {
     HotspotStatus.BatteryLevel.Full
   ]
   
+  var alamofire = Alamofire.Manager.sharedInstance
+  
   var currentStatus = HotspotStatus()
   var timer: NSTimer?
   var updateHandler: HotspotStatusUpdateHandler?
@@ -62,7 +64,7 @@ class VerizonHotspotPoller: NSObject, HotspotPoller {
   }
 
   func checkIndicators() {
-    Alamofire.request(.GET, indicatorsURL).responseJSON { _, _, result in
+    alamofire.request(.GET, indicatorsURL).responseJSON { _, _, result in
       if let value = result.value {
         let json = JSON(value)
         self.currentStatus.networkType = self.networkTypes[json["networkType"].intValue]
@@ -80,7 +82,7 @@ class VerizonHotspotPoller: NSObject, HotspotPoller {
   }
   
   func checkStatistics() {
-    Alamofire.request(.GET, statsURL).responseJSON { _, _, result in
+    alamofire.request(.GET, statsURL).responseJSON { _, _, result in
       guard let value = result.value else {
         return
       }

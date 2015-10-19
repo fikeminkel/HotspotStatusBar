@@ -46,13 +46,14 @@ struct HotspotStatus {
   var signalString = ""
   
   var description: String {
-    return "Status: { network: \(networkType), connected: \(connected), signal: \(signal), charging: \(charging), batteryLevel: \(batteryLevel), uptime: \(uptime), ipAddress: \(ipAddress), signalString: \(signalString)}"
+    return "Status: { network: \(networkType.rawValue), connected: \(connected), signal: \(signal.rawValue), charging: \(charging), batteryLevel: \(batteryLevel.rawValue), uptime: \(uptime), ipAddress: \(ipAddress), signalString: \(signalString)}"
   }
   
   mutating func reset() {
-    signal = SignalType.None
+    networkType = .None
+    signal = .None
     charging = false
-    batteryLevel = BatteryLevel.Unknown
+    batteryLevel = .Unknown
     uptime = ""
     ipAddress = ""
     signalString = ""

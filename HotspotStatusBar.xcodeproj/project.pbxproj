@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5208E7911BCDB6DF00D8C4BD /* PreferencesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208E7901BCDB6DF00D8C4BD /* PreferencesManagerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		5247C7901BCFF8D9003C3363 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C78F1BCFF8D9003C3363 /* Alamofire.framework */; };
+		5247C7931BCFF8FB003C3363 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */; };
+		5247C7941BD0024C003C3363 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */; };
+		5247C7951BD0024C003C3363 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C78F1BCFF8D9003C3363 /* Alamofire.framework */; };
+		5247C7981BD02113003C3363 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5247C78F1BCFF8D9003C3363 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5247C7991BD02116003C3363 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		525127BD1BCF1BF2009650D2 /* HotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		525127C11BCF216F009650D2 /* VerizonHotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		525127C41BCFE83C009650D2 /* StubAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127C31BCFE83C009650D2 /* StubAlamofireManager.swift */; settings = {ASSET_TAGS = (); }; };
 		52A457431BCC5ACA00A418F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		52A457441BCC5ACA00A418F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A457301BCC5ACA00A418F0 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
 		52A457451BCC5ACA00A418F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457351BCC5ACA00A418F0 /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
@@ -17,8 +27,8 @@
 		52A4574A1BCC5ACA00A418F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573E1BCC5ACA00A418F0 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		52A4574B1BCC5ACA00A418F0 /* indicators.json in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573F1BCC5ACA00A418F0 /* indicators.json */; settings = {ASSET_TAGS = (); }; };
 		52A4574D1BCC5ACA00A418F0 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457421BCC5ACA00A418F0 /* MenuBarView.swift */; settings = {ASSET_TAGS = (); }; };
-		52A45A9B1BCC5BC900A418F0 /* HotspotStatusBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457501BCC5AEA00A418F0 /* HotspotStatusBarTests.swift */; settings = {ASSET_TAGS = (); }; };
 		52A45A9C1BCC5BCD00A418F0 /* HotspotStatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */; settings = {ASSET_TAGS = (); }; };
+		52A45AA01BCC5DEA00A418F0 /* WIFIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A45A9F1BCC5DEA00A418F0 /* WIFIClientTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +48,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5247C7971BD02108003C3363 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5247C7981BD02113003C3363 /* Alamofire.framework in CopyFiles */,
+				5247C7991BD02116003C3363 /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5208E7901BCDB6DF00D8C4BD /* PreferencesManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesManagerTests.swift; sourceTree = "<group>"; };
 		52209DA41BC5BFE200339037 /* HotspotStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotspotStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52209DB31BC5BFE200339037 /* HotspotStatusBar.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBar.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52209DBE1BC5BFE200339037 /* HotspotStatusBar.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBar.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52209DB31BC5BFE200339037 /* HotspotStatusBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52209DBE1BC5BFE200339037 /* HotspotStatusBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5247C78F1BCFF8D9003C3363 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
+		5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotPollerTests.swift; sourceTree = "<group>"; };
+		525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerizonHotspotPollerTests.swift; sourceTree = "<group>"; };
+		525127C31BCFE83C009650D2 /* StubAlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubAlamofireManager.swift; sourceTree = "<group>"; };
 		52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A457311BCC5ACA00A418F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		52A457351BCC5ACA00A418F0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -54,9 +84,9 @@
 		52A457401BCC5ACA00A418F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A457421BCC5ACA00A418F0 /* MenuBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		52A4574F1BCC5AEA00A418F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52A457501BCC5AEA00A418F0 /* HotspotStatusBarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotStatusBarTests.swift; sourceTree = "<group>"; };
 		52A45A971BCC5B1200A418F0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotStatusBarUITests.swift; sourceTree = "<group>"; };
+		52A45A9F1BCC5DEA00A418F0 /* WIFIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIFIClientTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5247C7901BCFF8D9003C3363 /* Alamofire.framework in Frameworks */,
+				5247C7931BCFF8FB003C3363 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5247C7941BD0024C003C3363 /* SwiftyJSON.framework in Frameworks */,
+				5247C7951BD0024C003C3363 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +118,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5208E78F1BCDB6C200D8C4BD /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				5208E7901BCDB6DF00D8C4BD /* PreferencesManagerTests.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		52209D9B1BC5BFE200339037 = {
 			isa = PBXGroup;
 			children = (
 				52A4572E1BCC5ACA00A418F0 /* HotspotStatusBar */,
 				52A4574E1BCC5AEA00A418F0 /* HotspotStatusBarTests */,
 				52A45A961BCC5B1200A418F0 /* HotspotStatusBarUITests */,
+				5247C7911BCFF8DE003C3363 /* Frameworks */,
 				52209DA51BC5BFE200339037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,10 +141,44 @@
 			isa = PBXGroup;
 			children = (
 				52209DA41BC5BFE200339037 /* HotspotStatusBar.app */,
-				52209DB31BC5BFE200339037 /* HotspotStatusBar.xctest */,
-				52209DBE1BC5BFE200339037 /* HotspotStatusBar.xctest */,
+				52209DB31BC5BFE200339037 /* HotspotStatusBarTests.xctest */,
+				52209DBE1BC5BFE200339037 /* HotspotStatusBarUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5247C7911BCFF8DE003C3363 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */,
+				5247C78F1BCFF8D9003C3363 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		525127BB1BCF1BDF009650D2 /* Pollers */ = {
+			isa = PBXGroup;
+			children = (
+				525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */,
+				525127BF1BCF2151009650D2 /* Verizon */,
+			);
+			path = Pollers;
+			sourceTree = "<group>";
+		};
+		525127BF1BCF2151009650D2 /* Verizon */ = {
+			isa = PBXGroup;
+			children = (
+				525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */,
+			);
+			path = Verizon;
+			sourceTree = "<group>";
+		};
+		525127C21BCFE81B009650D2 /* Test Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				525127C31BCFE83C009650D2 /* StubAlamofireManager.swift */,
+			);
+			path = "Test Helpers";
 			sourceTree = "<group>";
 		};
 		52A4572E1BCC5ACA00A418F0 /* HotspotStatusBar */ = {
@@ -173,8 +250,11 @@
 		52A4574E1BCC5AEA00A418F0 /* HotspotStatusBarTests */ = {
 			isa = PBXGroup;
 			children = (
+				52A45A9D1BCC5DBE00A418F0 /* Network */,
+				525127BB1BCF1BDF009650D2 /* Pollers */,
+				5208E78F1BCDB6C200D8C4BD /* Preferences */,
+				525127C21BCFE81B009650D2 /* Test Helpers */,
 				52A4574F1BCC5AEA00A418F0 /* Info.plist */,
-				52A457501BCC5AEA00A418F0 /* HotspotStatusBarTests.swift */,
 			);
 			path = HotspotStatusBarTests;
 			sourceTree = "<group>";
@@ -186,6 +266,14 @@
 				52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */,
 			);
 			path = HotspotStatusBarUITests;
+			sourceTree = "<group>";
+		};
+		52A45A9D1BCC5DBE00A418F0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52A45A9F1BCC5DEA00A418F0 /* WIFIClientTests.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +304,8 @@
 				52209DAF1BC5BFE200339037 /* Sources */,
 				52209DB01BC5BFE200339037 /* Frameworks */,
 				52209DB11BC5BFE200339037 /* Resources */,
+				5247C7961BD00257003C3363 /* Copy Carthage Frameworks */,
+				5247C7971BD02108003C3363 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -224,7 +314,7 @@
 			);
 			name = HotspotStatusBarTests;
 			productName = TetherStatusBarTests;
-			productReference = 52209DB31BC5BFE200339037 /* HotspotStatusBar.xctest */;
+			productReference = 52209DB31BC5BFE200339037 /* HotspotStatusBarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		52209DBD1BC5BFE200339037 /* HotspotStatusBarUITests */ = {
@@ -242,7 +332,7 @@
 			);
 			name = HotspotStatusBarUITests;
 			productName = TetherStatusBarUITests;
-			productReference = 52209DBE1BC5BFE200339037 /* HotspotStatusBar.xctest */;
+			productReference = 52209DBE1BC5BFE200339037 /* HotspotStatusBarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -251,6 +341,7 @@
 		52209D9C1BC5BFE200339037 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Petoria;
 				TargetAttributes = {
@@ -332,6 +423,22 @@
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 			showEnvVarsInLog = 0;
 		};
+		5247C7961BD00257003C3363 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/SwiftyJSON.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -353,7 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52A45A9B1BCC5BC900A418F0 /* HotspotStatusBarTests.swift in Sources */,
+				5208E7911BCDB6DF00D8C4BD /* PreferencesManagerTests.swift in Sources */,
+				525127C11BCF216F009650D2 /* VerizonHotspotPollerTests.swift in Sources */,
+				525127BD1BCF1BF2009650D2 /* HotspotPollerTests.swift in Sources */,
+				52A45AA01BCC5DEA00A418F0 /* WIFIClientTests.swift in Sources */,
+				525127C41BCFE83C009650D2 /* StubAlamofireManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +605,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/HotspotStatusBar/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBar;
 				PRODUCT_NAME = HotspotStatusBar;
 			};
 			name = Debug;
@@ -521,7 +632,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/HotspotStatusBar/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBar;
 				PRODUCT_NAME = HotspotStatusBar;
 			};
 			name = Release;
@@ -530,11 +641,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TetherStatusBarTests/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = HotspotStatusBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarTests;
-				PRODUCT_NAME = HotspotStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarTests;
+				PRODUCT_NAME = HotspotStatusBarTests;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotspotStatusBar.app/Contents/MacOS/HotspotStatusBar";
 			};
 			name = Debug;
@@ -543,11 +660,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TetherStatusBarTests/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = HotspotStatusBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarTests;
-				PRODUCT_NAME = HotspotStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarTests;
+				PRODUCT_NAME = HotspotStatusBarTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotspotStatusBar.app/Contents/MacOS/HotspotStatusBar";
 			};
 			name = Release;
@@ -556,10 +678,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TetherStatusBarUITests/Info.plist;
+				INFOPLIST_FILE = HotspotStatusBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarUITests;
-				PRODUCT_NAME = HotspotStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarUITests;
+				PRODUCT_NAME = HotspotStatusBarUITests;
 				TEST_TARGET_NAME = TetherStatusBar;
 				USES_XCTRUNNER = YES;
 			};
@@ -569,10 +691,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TetherStatusBarUITests/Info.plist;
+				INFOPLIST_FILE = HotspotStatusBarUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.TetherStatusBarUITests;
-				PRODUCT_NAME = HotspotStatusBar;
+				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarUITests;
+				PRODUCT_NAME = HotspotStatusBarUITests;
 				TEST_TARGET_NAME = TetherStatusBar;
 				USES_XCTRUNNER = YES;
 			};
