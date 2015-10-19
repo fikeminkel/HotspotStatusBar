@@ -16,7 +16,9 @@
 		5247C7991BD02116003C3363 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		525127BD1BCF1BF2009650D2 /* HotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */; settings = {ASSET_TAGS = (); }; };
 		525127C11BCF216F009650D2 /* VerizonHotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		525127C41BCFE83C009650D2 /* StubAlamofireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127C31BCFE83C009650D2 /* StubAlamofireManager.swift */; settings = {ASSET_TAGS = (); }; };
+		527F9FBF1BD57BC000042AD6 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */; settings = {ASSET_TAGS = (); }; };
+		527F9FC01BD57BD300042AD6 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		527F9FC21BD57C2B00042AD6 /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F9FC11BD57C2B00042AD6 /* StubResponse.swift */; settings = {ASSET_TAGS = (); }; };
 		52A457431BCC5ACA00A418F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		52A457441BCC5ACA00A418F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A457301BCC5ACA00A418F0 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
 		52A457451BCC5ACA00A418F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457351BCC5ACA00A418F0 /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
@@ -55,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				527F9FC01BD57BD300042AD6 /* OHHTTPStubs.framework in CopyFiles */,
 				5247C7981BD02113003C3363 /* Alamofire.framework in CopyFiles */,
 				5247C7991BD02116003C3363 /* SwiftyJSON.framework in CopyFiles */,
 			);
@@ -71,7 +74,8 @@
 		5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotPollerTests.swift; sourceTree = "<group>"; };
 		525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerizonHotspotPollerTests.swift; sourceTree = "<group>"; };
-		525127C31BCFE83C009650D2 /* StubAlamofireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubAlamofireManager.swift; sourceTree = "<group>"; };
+		527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		527F9FC11BD57C2B00042AD6 /* StubResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
 		52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A457311BCC5ACA00A418F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		52A457351BCC5ACA00A418F0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527F9FBF1BD57BC000042AD6 /* OHHTTPStubs.framework in Frameworks */,
 				5247C7941BD0024C003C3363 /* SwiftyJSON.framework in Frameworks */,
 				5247C7951BD0024C003C3363 /* Alamofire.framework in Frameworks */,
 			);
@@ -150,6 +155,7 @@
 		5247C7911BCFF8DE003C3363 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */,
 				5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */,
 				5247C78F1BCFF8D9003C3363 /* Alamofire.framework */,
 			);
@@ -176,7 +182,7 @@
 		525127C21BCFE81B009650D2 /* Test Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				525127C31BCFE83C009650D2 /* StubAlamofireManager.swift */,
+				527F9FC11BD57C2B00042AD6 /* StubResponse.swift */,
 			);
 			path = "Test Helpers";
 			sourceTree = "<group>";
@@ -431,6 +437,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/OHHTTPStubs.framework",
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
@@ -464,7 +471,7 @@
 				525127C11BCF216F009650D2 /* VerizonHotspotPollerTests.swift in Sources */,
 				525127BD1BCF1BF2009650D2 /* HotspotPollerTests.swift in Sources */,
 				52A45AA01BCC5DEA00A418F0 /* WIFIClientTests.swift in Sources */,
-				525127C41BCFE83C009650D2 /* StubAlamofireManager.swift in Sources */,
+				527F9FC21BD57C2B00042AD6 /* StubResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
