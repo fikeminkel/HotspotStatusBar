@@ -5,8 +5,8 @@ import SwiftyJSON
 class VerizonHotspotPoller: NSObject, HotspotPoller {
   typealias HotspotStatusUpdateHandler = (HotspotStatus) -> ()
 
-  let indicatorsURL = NSURL(string: "http://192.168.1.1/v1/indicators")!
-  let statsURL = NSURL(string: "http://192.168.1.1/v1/statistics")!
+  let indicatorsURL = URL(string: "http://192.168.1.1/v1/indicators")!
+  let statsURL = URL(string: "http://192.168.1.1/v1/statistics")!
   
   let networkTypes = [
     HotspotStatus.NetworkType.None,
@@ -35,17 +35,17 @@ class VerizonHotspotPoller: NSObject, HotspotPoller {
     HotspotStatus.BatteryLevel.Full
   ]
   
-  var alamofire = Alamofire.Manager.sharedInstance
+  var alamofire = Alamofire.Session()
   
   var currentStatus = HotspotStatus()
-  var timer: NSTimer?
+  var timer: Timer?
   var updateHandler: HotspotStatusUpdateHandler?
   
-  func pollFor(interval: NSTimeInterval) {
+    func pollFor(interval: TimeInterval) {
     guard timer == nil else {
       return
     }
-    timer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "checkStatus", userInfo: nil, repeats: true)
+    timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(self.checkStatus), userInfo: nil, repeats: true)
     checkStatus()
   }
   
@@ -58,15 +58,15 @@ class VerizonHotspotPoller: NSObject, HotspotPoller {
     self.timer = nil
   }
   
-  func checkStatus() {
+  @objc func checkStatus() {
     checkIndicators()
     checkStatistics()
   }
 
   func checkIndicators() {
-    alamofire.request(.GET, indicatorsURL).responseJSON { _, _, result in
-      if let value = result.value {
-        let json = JSON(value)
+    alamofire.request(indicatorsURL).responseString { response in
+      if let value = response.value {
+        let json = JSON(parseJSON: value)
         self.currentStatus.networkType = self.networkTypes[json["networkType"].intValue]
         self.currentStatus.connected = (self.currentStatus.networkType != HotspotStatus.NetworkType.None)
         self.currentStatus.signal = self.signalTypes[json["signalStrengthMeter"].intValue]
@@ -82,11 +82,11 @@ class VerizonHotspotPoller: NSObject, HotspotPoller {
   }
   
   func checkStatistics() {
-    alamofire.request(.GET, statsURL).responseJSON { _, _, result in
-      guard let value = result.value else {
+    alamofire.request(statsURL).responseString { response in
+      guard let value = response.value else {
         return
       }
-      let json = JSON(value)
+      let json = JSON(parseJSON: value)
       self.currentStatus.uptime = json["duration"].stringValue
       self.currentStatus.ipAddress = json["IPv4Address"].stringValue
       let txRate = json["TX"]["rate"].stringValue

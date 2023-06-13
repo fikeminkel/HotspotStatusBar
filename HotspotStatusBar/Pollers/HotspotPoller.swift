@@ -4,7 +4,7 @@ protocol HotspotPoller {
   typealias HotspotStatusUpdateHandler = (HotspotStatus) -> ()
   
   var updateHandler: HotspotStatusUpdateHandler? { get set }
-  func pollFor(interval: NSTimeInterval)
+  func pollFor(interval: TimeInterval)
   func stopPolling()
 }
 

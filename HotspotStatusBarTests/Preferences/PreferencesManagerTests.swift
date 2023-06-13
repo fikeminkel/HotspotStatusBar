@@ -11,12 +11,12 @@ class PreferencesManagerTests: XCTestCase {
 
   
   var prefsManager: PreferencesManager!
-  var stubUserDefaults: StubNSUserDefaultsDelegator!
+  var stubUserDefaults: StubUserDefaultsDelegator!
   
   override func setUp() {
     super.setUp()
     prefsManager = PreferencesManager()
-    stubUserDefaults = StubNSUserDefaultsDelegator()
+    stubUserDefaults = StubUserDefaultsDelegator()
     prefsManager.userDefaults = stubUserDefaults
   }
   
@@ -41,48 +41,46 @@ class PreferencesManagerTests: XCTestCase {
   }
   
   func testBatteryUsageChangedHandler() {
-    let expectation = expectationWithDescription("expect this to be called")
+    let expectation = expectation(description: "expect this to be called")
     stubUserDefaults.dictionary[showBatteryUsageKey] = true
     prefsManager.batteryUsageChangedHandler = { newValue in
       XCTAssertTrue(newValue)
       expectation.fulfill()
     }
-    prefsManager.observeValueForKeyPath(showBatteryUsageKey, ofObject: nil, change: nil, context: nil)
-    waitForExpectationsWithTimeout(1, handler: nil)
+    prefsManager.observeValue(forKeyPath: showBatteryUsageKey, of: nil, change: nil, context: nil)
+    waitForExpectations(timeout: 1, handler: nil)
   }
 
   func testObservedSSIDChangedHandler() {
-    let expectation = expectationWithDescription("expect this to be called")
+    let expectation = expectation(description: "expect this to be called")
     stubUserDefaults.dictionary[observedSSIDKey] = "somessidstring"
     prefsManager.observedSSIDChangedHandler = { newValue in
       XCTAssertEqual(newValue, "somessidstring")
       expectation.fulfill()
     }
-    prefsManager.observeValueForKeyPath(observedSSIDKey, ofObject: nil, change: nil, context: nil)
-    waitForExpectationsWithTimeout(1, handler: nil)
+    prefsManager.observeValue(forKeyPath: observedSSIDKey, of: nil, change: nil, context: nil)
+    waitForExpectations(timeout: 1, handler: nil)
   }
   
   func testNothingBadHappensIfOtherPrefsAreUpdated() {
-    prefsManager.observeValueForKeyPath("someotherkey", ofObject: nil, change: nil, context: nil)
-    prefsManager.observeValueForKeyPath(nil, ofObject: nil, change: nil, context: nil)
+    prefsManager.observeValue(forKeyPath: "someotherkey", of: nil, change: nil, context: nil)
+    prefsManager.observeValue(forKeyPath: nil, of: nil, change: nil, context: nil)
   }
 }
 
+class StubUserDefaultsDelegator: UserDefaultsDelegator {
+  var dictionary: [String: Any?] = [:]
 
-
-class StubNSUserDefaultsDelegator: NSUserDefaultsDelegator {
-  var dictionary: [String: AnyObject?] = [:]
-
-  override func boolForKey(defaultName: String) -> Bool {
-    return dictionary[defaultName] as! Bool
+  override func bool(forKey key: String) -> Bool {
+    return dictionary[key] as! Bool
   }
-  override func setBool(value: Bool, forKey: String) {
-    dictionary[forKey] = value
+  override func set(_ value: Bool, forKey key: String) {
+    dictionary[key] = value
   }
-  override func stringForKey(defaultName: String) -> String? {
-    return dictionary[defaultName] as? String
+  override func string(forKey key: String) -> String? {
+    return dictionary[key] as? String
   }
-  override func setObject(value: AnyObject?, forKey: String) {
-    dictionary[forKey] = value
+  override func set(_ value: Any?, forKey key: String) {
+    dictionary[key] = value
   }
 }
