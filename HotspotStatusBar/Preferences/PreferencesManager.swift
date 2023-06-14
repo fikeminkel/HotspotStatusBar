@@ -37,7 +37,8 @@ class PreferencesManager: NSObject {
 
 // MARK: NSUserDefaults property observer
 extension PreferencesManager {
-  override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+  override func observeValue(forKeyPath keyPath: String?, of object: Any?,
+                             change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
     guard let prefName = keyPath else {
       return
     }
@@ -65,7 +66,8 @@ class UserDefaultsDelegator {
   func set(_ value: Any?, forKey key: String) {
     UserDefaults.standard.set(value, forKey: key)
   }
-  func addObserver(observer: NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?) {
+  func addObserver(observer: NSObject, forKeyPath: String,
+                   options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?) {
     UserDefaults.standard.addObserver(observer, forKeyPath: forKeyPath, options: options, context: context)
   }
 }
