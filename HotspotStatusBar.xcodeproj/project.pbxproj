@@ -3,34 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5208E7911BCDB6DF00D8C4BD /* PreferencesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208E7901BCDB6DF00D8C4BD /* PreferencesManagerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		5247C7901BCFF8D9003C3363 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C78F1BCFF8D9003C3363 /* Alamofire.framework */; };
-		5247C7931BCFF8FB003C3363 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */; };
-		5247C7941BD0024C003C3363 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */; };
-		5247C7951BD0024C003C3363 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5247C78F1BCFF8D9003C3363 /* Alamofire.framework */; };
-		5247C7981BD02113003C3363 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5247C78F1BCFF8D9003C3363 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5247C7991BD02116003C3363 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		525127BD1BCF1BF2009650D2 /* HotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		525127C11BCF216F009650D2 /* VerizonHotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */; settings = {ASSET_TAGS = (); }; };
-		527F9FBF1BD57BC000042AD6 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */; settings = {ASSET_TAGS = (); }; };
-		527F9FC01BD57BD300042AD6 /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		527F9FC21BD57C2B00042AD6 /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F9FC11BD57C2B00042AD6 /* StubResponse.swift */; settings = {ASSET_TAGS = (); }; };
-		52A457431BCC5ACA00A418F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
-		52A457441BCC5ACA00A418F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A457301BCC5ACA00A418F0 /* MainMenu.xib */; settings = {ASSET_TAGS = (); }; };
-		52A457451BCC5ACA00A418F0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457351BCC5ACA00A418F0 /* Reachability.swift */; settings = {ASSET_TAGS = (); }; };
-		52A457461BCC5ACA00A418F0 /* WIFIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457361BCC5ACA00A418F0 /* WIFIClient.swift */; settings = {ASSET_TAGS = (); }; };
-		52A457471BCC5ACA00A418F0 /* HotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457381BCC5ACA00A418F0 /* HotspotPoller.swift */; settings = {ASSET_TAGS = (); }; };
-		52A457481BCC5ACA00A418F0 /* VerizonHotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4573A1BCC5ACA00A418F0 /* VerizonHotspotPoller.swift */; settings = {ASSET_TAGS = (); }; };
-		52A457491BCC5ACA00A418F0 /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4573C1BCC5ACA00A418F0 /* PreferencesManager.swift */; settings = {ASSET_TAGS = (); }; };
-		52A4574A1BCC5ACA00A418F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573E1BCC5ACA00A418F0 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		52A4574B1BCC5ACA00A418F0 /* indicators.json in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573F1BCC5ACA00A418F0 /* indicators.json */; settings = {ASSET_TAGS = (); }; };
-		52A4574D1BCC5ACA00A418F0 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457421BCC5ACA00A418F0 /* MenuBarView.swift */; settings = {ASSET_TAGS = (); }; };
-		52A45A9C1BCC5BCD00A418F0 /* HotspotStatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */; settings = {ASSET_TAGS = (); }; };
-		52A45AA01BCC5DEA00A418F0 /* WIFIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A45A9F1BCC5DEA00A418F0 /* WIFIClientTests.swift */; settings = {ASSET_TAGS = (); }; };
+		1018D4802A38FCC500397F18 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 1018D47F2A38FCC500397F18 /* Reachability */; };
+		1018D4832A38FD1B00397F18 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1018D4822A38FD1B00397F18 /* Alamofire */; };
+		1018D4862A38FD7B00397F18 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1018D4852A38FD7B00397F18 /* SwiftyJSON */; };
+		1018D4892A38FFA700397F18 /* OHHTTPStubs in Frameworks */ = {isa = PBXBuildFile; productRef = 1018D4882A38FFA700397F18 /* OHHTTPStubs */; };
+		1018D48B2A38FFA700397F18 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1018D48A2A38FFA700397F18 /* OHHTTPStubsSwift */; };
+		5208E7911BCDB6DF00D8C4BD /* PreferencesManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5208E7901BCDB6DF00D8C4BD /* PreferencesManagerTests.swift */; };
+		525127BD1BCF1BF2009650D2 /* HotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */; };
+		525127C11BCF216F009650D2 /* VerizonHotspotPollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */; };
+		527F9FC21BD57C2B00042AD6 /* StubResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527F9FC11BD57C2B00042AD6 /* StubResponse.swift */; };
+		52A457431BCC5ACA00A418F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */; };
+		52A457441BCC5ACA00A418F0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A457301BCC5ACA00A418F0 /* MainMenu.xib */; };
+		52A457461BCC5ACA00A418F0 /* WIFIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457361BCC5ACA00A418F0 /* WIFIClient.swift */; };
+		52A457471BCC5ACA00A418F0 /* HotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457381BCC5ACA00A418F0 /* HotspotPoller.swift */; };
+		52A457481BCC5ACA00A418F0 /* VerizonHotspotPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4573A1BCC5ACA00A418F0 /* VerizonHotspotPoller.swift */; };
+		52A457491BCC5ACA00A418F0 /* PreferencesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4573C1BCC5ACA00A418F0 /* PreferencesManager.swift */; };
+		52A4574A1BCC5ACA00A418F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573E1BCC5ACA00A418F0 /* Assets.xcassets */; };
+		52A4574B1BCC5ACA00A418F0 /* indicators.json in Resources */ = {isa = PBXBuildFile; fileRef = 52A4573F1BCC5ACA00A418F0 /* indicators.json */; };
+		52A4574D1BCC5ACA00A418F0 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A457421BCC5ACA00A418F0 /* MenuBarView.swift */; };
+		52A45A9C1BCC5BCD00A418F0 /* HotspotStatusBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A45A981BCC5B1200A418F0 /* HotspotStatusBarUITests.swift */; };
+		52A45AA01BCC5DEA00A418F0 /* WIFIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A45A9F1BCC5DEA00A418F0 /* WIFIClientTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +53,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				527F9FC01BD57BD300042AD6 /* OHHTTPStubs.framework in CopyFiles */,
-				5247C7981BD02113003C3363 /* Alamofire.framework in CopyFiles */,
-				5247C7991BD02116003C3363 /* SwiftyJSON.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,15 +63,11 @@
 		52209DA41BC5BFE200339037 /* HotspotStatusBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotspotStatusBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52209DB31BC5BFE200339037 /* HotspotStatusBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52209DBE1BC5BFE200339037 /* HotspotStatusBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotspotStatusBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5247C78F1BCFF8D9003C3363 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
-		5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
 		525127BC1BCF1BF2009650D2 /* HotspotPollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotPollerTests.swift; sourceTree = "<group>"; };
 		525127C01BCF216F009650D2 /* VerizonHotspotPollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerizonHotspotPollerTests.swift; sourceTree = "<group>"; };
-		527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		527F9FC11BD57C2B00042AD6 /* StubResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubResponse.swift; sourceTree = "<group>"; };
 		52A4572F1BCC5ACA00A418F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A457311BCC5ACA00A418F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		52A457351BCC5ACA00A418F0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		52A457361BCC5ACA00A418F0 /* WIFIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WIFIClient.swift; sourceTree = "<group>"; };
 		52A457381BCC5ACA00A418F0 /* HotspotPoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotspotPoller.swift; sourceTree = "<group>"; };
 		52A4573A1BCC5ACA00A418F0 /* VerizonHotspotPoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerizonHotspotPoller.swift; sourceTree = "<group>"; };
@@ -98,8 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5247C7901BCFF8D9003C3363 /* Alamofire.framework in Frameworks */,
-				5247C7931BCFF8FB003C3363 /* SwiftyJSON.framework in Frameworks */,
+				1018D4862A38FD7B00397F18 /* SwiftyJSON in Frameworks */,
+				1018D4802A38FCC500397F18 /* Reachability in Frameworks */,
+				1018D4832A38FD1B00397F18 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,9 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				527F9FBF1BD57BC000042AD6 /* OHHTTPStubs.framework in Frameworks */,
-				5247C7941BD0024C003C3363 /* SwiftyJSON.framework in Frameworks */,
-				5247C7951BD0024C003C3363 /* Alamofire.framework in Frameworks */,
+				1018D48B2A38FFA700397F18 /* OHHTTPStubsSwift in Frameworks */,
+				1018D4892A38FFA700397F18 /* OHHTTPStubs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +144,6 @@
 		5247C7911BCFF8DE003C3363 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				527F9FBE1BD57BC000042AD6 /* OHHTTPStubs.framework */,
-				5247C7921BCFF8FB003C3363 /* SwiftyJSON.framework */,
-				5247C78F1BCFF8D9003C3363 /* Alamofire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +190,6 @@
 		52A457341BCC5ACA00A418F0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				52A457351BCC5ACA00A418F0 /* Reachability.swift */,
 				52A457361BCC5ACA00A418F0 /* WIFIClient.swift */,
 			);
 			path = Network;
@@ -292,13 +277,17 @@
 				52209DA01BC5BFE200339037 /* Sources */,
 				52209DA11BC5BFE200339037 /* Frameworks */,
 				52209DA21BC5BFE200339037 /* Resources */,
-				52209DE21BC5E64C00339037 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = HotspotStatusBar;
+			packageProductDependencies = (
+				1018D47F2A38FCC500397F18 /* Reachability */,
+				1018D4822A38FD1B00397F18 /* Alamofire */,
+				1018D4852A38FD7B00397F18 /* SwiftyJSON */,
+			);
 			productName = TetherStatusBar;
 			productReference = 52209DA41BC5BFE200339037 /* HotspotStatusBar.app */;
 			productType = "com.apple.product-type.application";
@@ -310,7 +299,6 @@
 				52209DAF1BC5BFE200339037 /* Sources */,
 				52209DB01BC5BFE200339037 /* Frameworks */,
 				52209DB11BC5BFE200339037 /* Resources */,
-				5247C7961BD00257003C3363 /* Copy Carthage Frameworks */,
 				5247C7971BD02108003C3363 /* CopyFiles */,
 			);
 			buildRules = (
@@ -319,6 +307,10 @@
 				52209DB51BC5BFE200339037 /* PBXTargetDependency */,
 			);
 			name = HotspotStatusBarTests;
+			packageProductDependencies = (
+				1018D4882A38FFA700397F18 /* OHHTTPStubs */,
+				1018D48A2A38FFA700397F18 /* OHHTTPStubsSwift */,
+			);
 			productName = TetherStatusBarTests;
 			productReference = 52209DB31BC5BFE200339037 /* HotspotStatusBarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -369,10 +361,17 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 52209D9B1BC5BFE200339037;
+			packageReferences = (
+				1018D47E2A38FCC500397F18 /* XCRemoteSwiftPackageReference "Reachability" */,
+				1018D4812A38FD1B00397F18 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1018D4842A38FD7B00397F18 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				1018D4872A38FFA700397F18 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
+			);
 			productRefGroup = 52209DA51BC5BFE200339037 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -411,43 +410,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		52209DE21BC5E64C00339037 /* Copy Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/SwiftyJSON.framework",
-			);
-			name = "Copy Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-			showEnvVarsInLog = 0;
-		};
-		5247C7961BD00257003C3363 /* Copy Carthage Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/OHHTTPStubs.framework",
-			);
-			name = "Copy Carthage Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		52209DA01BC5BFE200339037 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -457,7 +419,6 @@
 				52A457481BCC5ACA00A418F0 /* VerizonHotspotPoller.swift in Sources */,
 				52A457461BCC5ACA00A418F0 /* WIFIClient.swift in Sources */,
 				52A457471BCC5ACA00A418F0 /* HotspotPoller.swift in Sources */,
-				52A457451BCC5ACA00A418F0 /* Reachability.swift in Sources */,
 				52A4574D1BCC5ACA00A418F0 /* MenuBarView.swift in Sources */,
 				52A457491BCC5ACA00A418F0 /* PreferencesManager.swift in Sources */,
 			);
@@ -546,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -584,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -595,25 +556,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/watchOS",
-				);
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = SPMAVT5Z8M;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/HotspotStatusBar/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBar;
 				PRODUCT_NAME = HotspotStatusBar;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -622,25 +574,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Alamofire/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/OHHTTPStubs/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/Carthage/Checkouts/SwiftyJSON/Carthage/Build/watchOS",
-				);
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = SPMAVT5Z8M;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/HotspotStatusBar/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBar;
 				PRODUCT_NAME = HotspotStatusBar;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -650,15 +593,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HotspotStatusBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarTests;
 				PRODUCT_NAME = HotspotStatusBarTests;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotspotStatusBar.app/Contents/MacOS/HotspotStatusBar";
 			};
 			name = Debug;
@@ -669,14 +614,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = HotspotStatusBarTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarTests;
 				PRODUCT_NAME = HotspotStatusBarTests;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HotspotStatusBar.app/Contents/MacOS/HotspotStatusBar";
 			};
 			name = Release;
@@ -686,9 +633,14 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = HotspotStatusBarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarUITests;
 				PRODUCT_NAME = HotspotStatusBarUITests;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TetherStatusBar;
 				USES_XCTRUNNER = YES;
 			};
@@ -699,9 +651,14 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = HotspotStatusBarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.petoria.HotspotStatusBarUITests;
 				PRODUCT_NAME = HotspotStatusBarUITests;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TetherStatusBar;
 				USES_XCTRUNNER = YES;
 			};
@@ -747,6 +704,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1018D47E2A38FCC500397F18 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1018D4812A38FD1B00397F18 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.7.0;
+			};
+		};
+		1018D4842A38FD7B00397F18 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1018D4872A38FFA700397F18 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1018D47F2A38FCC500397F18 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1018D47E2A38FCC500397F18 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		1018D4822A38FD1B00397F18 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1018D4812A38FD1B00397F18 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1018D4852A38FD7B00397F18 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1018D4842A38FD7B00397F18 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		1018D4882A38FFA700397F18 /* OHHTTPStubs */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1018D4872A38FFA700397F18 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubs;
+		};
+		1018D48A2A38FFA700397F18 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1018D4872A38FFA700397F18 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52209D9C1BC5BFE200339037 /* Project object */;
 }

@@ -37,48 +37,47 @@ class MenuBarView: NSView {
     fatalError("init(coder:) has not been implemented")
   }
   
-  override func drawRect(dirtyRect: NSRect) {
+  override func draw(_ dirtyRect: NSRect) {
     // highlight view in menu bar if the prefs panel is open
     if let menuBarItem = menuBarItem {
-      menuBarItem.drawStatusBarBackgroundInRect(bounds, withHighlight: highlighted)
+      menuBarItem.drawStatusBarBackground(in: bounds, withHighlight: highlighted)
     }
     
-    connectionImage?.drawAtPoint(NSMakePoint(2, 2), fromRect: NSZeroRect, operation: NSCompositingOperation.CompositeSourceOver, fraction: 1.0)
+    connectionImage?.draw(at: NSMakePoint(2, 2), from: NSZeroRect, operation: NSCompositingOperation.sourceOver, fraction: 1.0)
 
     if let networkType = status?.networkType.rawValue {
-      let textColor = NSColor.darkGrayColor()
-      let textFont = NSFont(name: "Helvetica-Bold", size:9)
-      
-      var textFontAttributes: [String: AnyObject] = [:]
-      textFontAttributes[NSFontAttributeName] = textFont
-      textFontAttributes[NSForegroundColorAttributeName] = textColor
+      var textFontAttributes: [NSAttributedStringKey: AnyObject] = [:]
+      textFontAttributes[NSAttributedStringKey.font] = NSFont(name: "Helvetica-Bold", size:9)
+      textFontAttributes[NSAttributedStringKey.foregroundColor] = NSColor.darkGray
       let drawText = NSAttributedString(string: networkType, attributes: textFontAttributes)
-      drawText.drawAtPoint(NSMakePoint(0, 9))
+      drawText.draw(at: NSPoint(x: 0, y: 9))
     }
     
     if prefsManager.showBatteryUsage {
-      batteryImage?.drawAtPoint(NSMakePoint(20, 2), fromRect: NSZeroRect, operation: NSCompositingOperation.CompositeSourceOver, fraction: 1.0)
+      batteryImage?.draw(at: NSPoint(x: 20, y: 2), from: NSRect.zero,
+                         operation: NSCompositingOperation.sourceOver, fraction: 1.0)
     }
   }
   
   func updateConnectionImage() {
-    guard let status = status where status.connected else {
-      connectionImage = NSImage(named: "Network Disconnected")
+    guard let status = status, status.connected else {
+      connectionImage = NSImage(named: .networkDisconnected)
       return
     }
-    connectionImage = NSImage(named: "Network \(status.signal)")
+    connectionImage = NSImage(named: .networkName(forSignalType: status.signal))
   }
   
   func updateBatteryImage() {
     guard let status = status else {
-      batteryImage = NSImage(named: "Battery Unknown Normal")
+      batteryImage = NSImage(named: .batteryUnknownNormal)
       return
     }
-    batteryImage = NSImage(named: "Battery \(status.batteryLevel) \(status.chargingString)")
+
+    batteryImage = NSImage(named: .batteryName(forStatus: status))
   }
   
   func updateToolTip() {
-    guard let status = status where status.connected else {
+    guard let status = status, status.connected else {
       toolTip = "Status: Disconnected"
       return
     }
@@ -95,26 +94,26 @@ class MenuBarView: NSView {
       return
     }
     // first let's clear out the old ssid list
-    let firstSeparator = menu.itemWithTag(1)!
-    let secondSeparator = menu.itemWithTag(2)!
-    var insertIndex = menu.indexOfItem(firstSeparator) + 1
-    var removalIndex = menu.indexOfItem(secondSeparator) - 1
+    let firstSeparator = menu.item(withTag: 1)!
+    let secondSeparator = menu.item(withTag: 2)!
+    var insertIndex = menu.index(of: firstSeparator) + 1
+    var removalIndex = menu.index(of: secondSeparator) - 1
     while removalIndex >= insertIndex {
-      menu.removeItemAtIndex(removalIndex)
-      removalIndex--
+      menu.removeItem(at: removalIndex)
+      removalIndex -= 1
     }
 
     // now we can add the known ssids into the menu
     for ssid in WIFIClient().knownSSIDs {
-      let ssidMenuItem = NSMenuItem(title: ssid, action: Selector("updateSSID:"), keyEquivalent: "")
+      let ssidMenuItem = NSMenuItem(title: ssid, action: #selector(self.updateSSID), keyEquivalent: "")
       ssidMenuItem.target = self
-      ssidMenuItem.state = (ssid == prefsManager.observedSSID) ? NSOnState : NSOffState
-      menu.insertItem(ssidMenuItem, atIndex: insertIndex)
-      insertIndex++
+      ssidMenuItem.state = (ssid == prefsManager.observedSSID) ? .on : .off
+      menu.insertItem(ssidMenuItem, at: insertIndex)
+      insertIndex += 1
     }
   }
   
-  func updateSSID(sender: AnyObject?) {
+  @objc func updateSSID(sender: AnyObject?) {
     guard let selectedMenuItem = sender as? NSMenuItem else {
       return
     }
@@ -124,29 +123,48 @@ class MenuBarView: NSView {
 
 // MARK: NSView mouse events
 extension MenuBarView {
-  override func mouseDown(theEvent: NSEvent) {
+  override func mouseDown(with event: NSEvent) {
     if let menu = menu {
       menu.delegate = self
       self.populateSSIDs()
-      menuBarItem?.popUpStatusItemMenu(menu)
+      menuBarItem?.popUpMenu(menu)
     }
   }
   
-  override func rightMouseDown(theEvent: NSEvent) {
-    mouseDown(theEvent)
+  override func rightMouseDown(with event: NSEvent) {
+    mouseDown(with: event)
   }
 }
 
 // MARK: NSMenuDelegate
 extension MenuBarView: NSMenuDelegate {
-  func menuWillOpen(menu: NSMenu) {
+  func menuWillOpen(_ menu: NSMenu) {
     highlighted = true
     needsDisplay = true
   }
   
-  func menuDidClose(menu: NSMenu) {
+  func menuDidClose(_ menu: NSMenu) {
     highlighted = false
     menu.delegate = nil
     needsDisplay = true
   }
+}
+
+extension NSImage.Name {
+    static let networkDisconnected = NSImage.Name("Network Disconnected")
+    static let networkNone = NSImage.Name("Network None")
+    static let networkLow = NSImage.Name("Network Low")
+    static let networkMedium = NSImage.Name("Network Medium")
+    static let networkHigh = NSImage.Name("Network High")
+    static let networkFull = NSImage.Name("Network Full")
+        
+    static func networkName(forSignalType signalType: HotspotStatus.SignalType) -> NSImage.Name {
+        return NSImage.Name(rawValue: "Network \(signalType)")
+    }
+
+    static let batteryUnknownNormal = NSImage.Name("Battery Unknown Normal")
+
+    static func batteryName(forStatus status: HotspotStatus) -> NSImage.Name {
+        return NSImage.Name(rawValue: "Battery \(status.batteryLevel) \(status.chargingString)")
+    }
 }

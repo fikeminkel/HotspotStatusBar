@@ -4,38 +4,41 @@ class PreferencesManager: NSObject {
   private let showBatteryUsageKey = "showBatteryUsage"
   private let observedSSIDKey = "observedSSID"
 
-  var userDefaults = NSUserDefaultsDelegator()
-  var batteryUsageChangedHandler: (Bool -> ())?
-  var observedSSIDChangedHandler: (String? -> ())?
+  var userDefaults = UserDefaultsDelegator()
+  var batteryUsageChangedHandler: ((Bool) -> ())?
+  var observedSSIDChangedHandler: ((String?) -> ())?
   
   override init() {
     super.init()
-    userDefaults.addObserver(self, forKeyPath: showBatteryUsageKey, options: NSKeyValueObservingOptions.New, context: nil)
-    userDefaults.addObserver(self, forKeyPath: observedSSIDKey, options: NSKeyValueObservingOptions.New, context: nil)
+    userDefaults.addObserver(observer: self, forKeyPath: showBatteryUsageKey,
+                             options: NSKeyValueObservingOptions.new, context: nil)
+    userDefaults.addObserver(observer: self, forKeyPath: observedSSIDKey,
+                             options: NSKeyValueObservingOptions.new, context: nil)
   }
   
   var showBatteryUsage: Bool {
     get {
-      return userDefaults.boolForKey(showBatteryUsageKey)
+        return userDefaults.bool(forKey: showBatteryUsageKey)
     }
     set(newValue) {
-      userDefaults.setBool(newValue, forKey: showBatteryUsageKey)
+      userDefaults.set(newValue, forKey: showBatteryUsageKey)
     }
   }
   
   var observedSSID: String? {
     get {
-      return userDefaults.stringForKey(observedSSIDKey)
+      return userDefaults.string(forKey: observedSSIDKey)
     }
     set(newValue) {
-      userDefaults.setObject(newValue, forKey: observedSSIDKey)
+      userDefaults.set(newValue, forKey: observedSSIDKey)
     }
   }
 }
 
 // MARK: NSUserDefaults property observer
 extension PreferencesManager {
-  override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+  override func observeValue(forKeyPath keyPath: String?, of object: Any?,
+                             change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
     guard let prefName = keyPath else {
       return
     }
@@ -50,21 +53,22 @@ extension PreferencesManager {
   }
 }
 
-class NSUserDefaultsDelegator {
-  func boolForKey(defaultName: String) -> Bool {
-    return NSUserDefaults.standardUserDefaults().boolForKey(defaultName)
+class UserDefaultsDelegator {
+  func bool(forKey key: String) -> Bool {
+    return UserDefaults.standard.bool(forKey: key)
   }
-  func setBool(value: Bool, forKey: String) {
-    NSUserDefaults.standardUserDefaults().setBool(value, forKey: forKey)
+  func set(_ value: Bool, forKey: String) {
+    UserDefaults.standard.set(value, forKey: forKey)
   }
-  func stringForKey(defaultName: String) -> String? {
-    return NSUserDefaults.standardUserDefaults().stringForKey(defaultName)
+  func string(forKey key: String) -> String? {
+    return UserDefaults.standard.string(forKey: key)
   }
-  func setObject(value: AnyObject?, forKey: String) {
-    NSUserDefaults.standardUserDefaults().setObject(value, forKey: forKey)
+  func set(_ value: Any?, forKey key: String) {
+    UserDefaults.standard.set(value, forKey: key)
   }
-  func addObserver(observer: NSObject, forKeyPath: String, options: NSKeyValueObservingOptions, context: UnsafeMutablePointer<Void>) {
-    NSUserDefaults.standardUserDefaults().addObserver(observer, forKeyPath: forKeyPath, options: options, context: context)
+  func addObserver(observer: NSObject, forKeyPath: String,
+                   options: NSKeyValueObservingOptions, context: UnsafeMutableRawPointer?) {
+    UserDefaults.standard.addObserver(observer, forKeyPath: forKeyPath, options: options, context: context)
   }
 }
 

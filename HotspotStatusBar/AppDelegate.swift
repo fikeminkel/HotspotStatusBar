@@ -1,39 +1,40 @@
 import Cocoa
 import CoreWLAN
+import Reachability
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
   var prefsManager = PreferencesManager()
-  
-  let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+
+  let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
   let menuBarView = MenuBarView()
   @IBOutlet var window: NSWindow?
   @IBOutlet var menuBarMenu: NSMenu?
 
   // network polling
-  let reachability = Reachability.reachabilityForLocalWiFi()!
+  let reachability = try? Reachability()
   let pollInterval = 2.0
   let hotspotPoller = VerizonHotspotPoller()
   
   var ssid: String? {
-    return CWWiFiClient.sharedWiFiClient().interface()?.ssid()
+    return CWWiFiClient.shared().interface()?.ssid()
   }
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     setupMenuBar()
     setupPreferences()
-    updateMenuBarStatus(nil)
+    updateMenuBar(status: nil)
     startReachability()
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {
     stopHotspotPoller()
-    reachability.stopNotifier()
+    reachability?.stopNotifier()
   }
   
   @IBAction func quitApplication(sender: AnyObject?) {
-    NSApplication.sharedApplication().terminate(sender)
+    NSApplication.shared.terminate(sender)
   }
   
   func setupPreferences() {
@@ -49,23 +50,30 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
   
   func startReachability() {
+    guard let reachability = reachability else {
+      return
+    }
     reachability.whenReachable = { reachability in
-      dispatch_async(dispatch_get_main_queue()) {
+      DispatchQueue.main.async {
         // TODO: check the SSID against the prefs
         print("Network is now reachable.")
         self.observedSSIDChanged()
       }
     }
     reachability.whenUnreachable = { reachability in
-      dispatch_async(dispatch_get_main_queue()) {
+      DispatchQueue.main.async {
         print("Network unreachable!")
         self.stopHotspotPoller()
       }
     }
-    if reachability.isReachable() {
+    if reachability.connection != .unavailable {
       observedSSIDChanged()
     }
-    reachability.startNotifier()
+    do {
+      try reachability.startNotifier()
+    } catch {
+      print("Failed to start reachability notifier")
+    }
   }
 
   func observedSSIDChanged() {
@@ -77,21 +85,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
   
   func startHotspotPoller() {
-    updateMenuBarStatus(nil)
+    updateMenuBar(status: nil)
     hotspotPoller.updateHandler = { status in
-      self.updateMenuBarStatus(status)
+      self.updateMenuBar(status: status)
     }
-    hotspotPoller.pollFor(pollInterval)
+    hotspotPoller.pollFor(interval: pollInterval)
   }
   
   func stopHotspotPoller() {
     hotspotPoller.updateHandler = nil
     hotspotPoller.stopPolling()
-    updateMenuBarStatus(nil)
+    updateMenuBar(status: nil)
   }
   
-  func updateMenuBarStatus(status: HotspotStatus?) {
-    if !reachability.isReachable() {
+  func updateMenuBar(status: HotspotStatus?) {
+    if reachability?.connection == .unavailable {
       var status = HotspotStatus()
       status.connected = false
       menuBarView.status = status

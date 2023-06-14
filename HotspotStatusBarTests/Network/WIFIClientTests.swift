@@ -45,7 +45,7 @@ class StubCWConfiguration: CWConfiguration {
   override var networkProfiles: NSOrderedSet {
     let set = NSMutableOrderedSet(capacity: profiles.count)
     for profile in profiles {
-      set.addObject(profile)
+      set.add(profile)
     }
     return set
   }
@@ -65,7 +65,7 @@ class StubCWNetworkProfile: CWNetworkProfile {
   override var ssid: String {
     return stubSSID
   }
-  override func isEqualToNetworkProfile(networkProfile: CWNetworkProfile) -> Bool {
+  override func isEqual(to networkProfile: CWNetworkProfile) -> Bool {
     guard let stubNetworkProfile = networkProfile as? StubCWNetworkProfile else {
       return false
     }

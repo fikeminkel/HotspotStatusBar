@@ -63,9 +63,9 @@ class HotspotPollerTests: XCTestCase {
     status.ipAddress = "ipAddress"
     status.signalString = "signalString"
     
-    XCTAssertTrue(status.description.containsString(HotspotStatus.NetworkType.FourG.rawValue))
-    XCTAssertTrue(status.description.containsString(HotspotStatus.SignalType.Full.rawValue))
-    XCTAssertTrue(status.description.containsString(HotspotStatus.BatteryLevel.Full.rawValue))
+    XCTAssertTrue(status.description.contains(HotspotStatus.NetworkType.FourG.rawValue))
+    XCTAssertTrue(status.description.contains(HotspotStatus.SignalType.Full.rawValue))
+    XCTAssertTrue(status.description.contains(HotspotStatus.BatteryLevel.Full.rawValue))
 
   }
 }
