@@ -50,11 +50,12 @@ class MenuBarView: NSView {
       textFontAttributes[NSAttributedStringKey.font] = NSFont(name: "Helvetica-Bold", size:9)
       textFontAttributes[NSAttributedStringKey.foregroundColor] = NSColor.darkGray
       let drawText = NSAttributedString(string: networkType, attributes: textFontAttributes)
-      drawText.draw(at: NSMakePoint(0, 9))
+      drawText.draw(at: NSPoint(x: 0, y: 9))
     }
     
     if prefsManager.showBatteryUsage {
-      batteryImage?.draw(at: NSMakePoint(20, 2), from: NSZeroRect, operation: NSCompositingOperation.sourceOver, fraction: 1.0)
+      batteryImage?.draw(at: NSPoint(x: 20, y: 2), from: NSRect.zero,
+                         operation: NSCompositingOperation.sourceOver, fraction: 1.0)
     }
   }
   

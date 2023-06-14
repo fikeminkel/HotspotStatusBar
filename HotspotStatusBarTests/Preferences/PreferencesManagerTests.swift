@@ -72,7 +72,10 @@ class StubUserDefaultsDelegator: UserDefaultsDelegator {
   var dictionary: [String: Any?] = [:]
 
   override func bool(forKey key: String) -> Bool {
-    return dictionary[key] as! Bool
+    guard let value = dictionary[key] as? Bool else {
+        return false
+    }
+    return value
   }
   override func set(_ value: Bool, forKey key: String) {
     dictionary[key] = value

@@ -7,14 +7,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   var prefsManager = PreferencesManager()
 
-    
   let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
   let menuBarView = MenuBarView()
   @IBOutlet var window: NSWindow?
   @IBOutlet var menuBarMenu: NSMenu?
 
   // network polling
-  let reachability = try! Reachability()
+  let reachability = try? Reachability()
   let pollInterval = 2.0
   let hotspotPoller = VerizonHotspotPoller()
   
@@ -31,7 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   func applicationWillTerminate(aNotification: NSNotification) {
     stopHotspotPoller()
-    reachability.stopNotifier()
+    reachability?.stopNotifier()
   }
   
   @IBAction func quitApplication(sender: AnyObject?) {
@@ -51,6 +50,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
   
   func startReachability() {
+    guard let reachability = reachability else {
+      return
+    }
     reachability.whenReachable = { reachability in
       DispatchQueue.main.async {
         // TODO: check the SSID against the prefs
@@ -97,7 +99,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   }
   
   func updateMenuBar(status: HotspotStatus?) {
-    if reachability.connection == .unavailable {
+    if reachability?.connection == .unavailable {
       var status = HotspotStatus()
       status.connected = false
       menuBarView.status = status

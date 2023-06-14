@@ -10,8 +10,10 @@ class PreferencesManager: NSObject {
   
   override init() {
     super.init()
-    userDefaults.addObserver(observer: self, forKeyPath: showBatteryUsageKey, options: NSKeyValueObservingOptions.new, context: nil)
-    userDefaults.addObserver(observer: self, forKeyPath: observedSSIDKey, options: NSKeyValueObservingOptions.new, context: nil)
+    userDefaults.addObserver(observer: self, forKeyPath: showBatteryUsageKey,
+                             options: NSKeyValueObservingOptions.new, context: nil)
+    userDefaults.addObserver(observer: self, forKeyPath: observedSSIDKey,
+                             options: NSKeyValueObservingOptions.new, context: nil)
   }
   
   var showBatteryUsage: Bool {
